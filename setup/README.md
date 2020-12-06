@@ -78,6 +78,9 @@ sudo ufw limit ssh
 # Same for VNC
 sudo ufw limit vnc
 
+# And for rsync
+sudo ufw limit rsync comment rsync
+
 # Good to go!
 sudo ufw enable
 ```
