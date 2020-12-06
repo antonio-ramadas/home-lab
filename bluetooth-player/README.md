@@ -62,7 +62,7 @@ amixer set Master 100%
 # I'm not quite sure if this step is necessary
 # pacmd set-sink-volume 0 65537
 
-# Optional step to redirect sound from HDMI to audio jack (only if necessary)
+# Optional step to set sound output for headphones (only if necessary)
 # amixer cset numid=3 1
 
 # All good!
@@ -89,4 +89,8 @@ sudo reboot
 
 ## Known issues
 
-Audio may stutter, lag and be distorted on lower frequencies (bass). This seems to only happen at the very start and for a short period of time. Pausing and returning to play seems to fix it. Raspberry Pi holds the load. I suspect that this is due to the initial bits on the transfer to get lost. Anyway, this could be improved but it is manageable.
+Audio may stutter, lag and be distorted on lower frequencies (bass). This seems to only happen at the very start and for a short period of time. Pausing and returning to play seems to fix it. Raspberry Pi holds the load. I suspect that this is due to the initial bits on the transfer to get lost. Another possible explanation is [how `module-loopback` works](https://www.freedesktop.org/wiki/Software/PulseAudio/Documentation/User/Modules/#module-loopback). Anyway, this could be improved but it is manageable.
+
+## Useful resources
+
+- [Raspberry Pi audio guide](https://www.raspberrypi.org/documentation/configuration/audio-config.md)
