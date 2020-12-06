@@ -44,7 +44,7 @@ We're not going to disable access with password as I want to have the flexibilit
 
 This is an optional step. Only to be made if needed to mount the device on the filesystem.
 
-Follow the [official guide](https://www.raspberrypi.org/documentation/remote-access/ssh/sshfs.md). Use with `-o autocache` to prevent cache problems (directory not up-to-date).
+Follow the [official guide](https://www.raspberrypi.org/documentation/remote-access/ssh/sshfs.md). Use with `-o auto_cache` to prevent cache problems (directory not up-to-date).
 
 If it gives an error when using `sshfs`, then it is also necessary to install [FUSE for OS X](https://osxfuse.github.io/).
 

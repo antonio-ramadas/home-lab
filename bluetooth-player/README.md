@@ -46,8 +46,15 @@ pactl list sources short
 # Take note of the sink (where the music will be played to)
 pactl list sinks short
 
+# The next step (redirect audio) may not be necessary.
+# Consider instead checking if default sink is the one you want
+# and change it if necessary. The default is the one with `*`
+pacmd list-sinks
+# Change it with
+pacmd set-default-sink <INDEX_OF_THE_SINK>
+
 # Redirect audio (something along the lines of)
-pactl load-module module-loopback source=bluez_source.XX_XX_XX_XX_XX_XX.a2dp_source sink=alsa_output.platform-soc_audio.analog-stereo
+# pactl load-module module-loopback source=bluez_source.XX_XX_XX_XX_XX_XX.a2dp_source sink=alsa_output.platform-soc_audio.analog-stereo
 
 # Turn it up!
 amixer set Master 100%
