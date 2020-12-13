@@ -10,6 +10,7 @@ Things to look for:
 - Automatic Certificate Renewal
 - Authentication
 - Web Server (bonus)
+- WebDAV support (useful to [sync with Joplin](https://joplinapp.org/#synchronisation), but optional)
 
 Useful resources:
 
