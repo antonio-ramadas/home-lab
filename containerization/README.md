@@ -28,4 +28,18 @@ newgrp docker
 
 We're going to stick with [x11docker](https://github.com/mviereck/x11docker). Installation details are present on the [README file](https://github.com/mviereck/x11docker#installation).
 
+----
+
+### Debug notes :bug:
+
+Some errors I was facing were due to the lxde image not supporting the platform arm/v7. Luckily, someone else already [stumbled on the problem and posted the solution](https://github.com/mviereck/x11docker/issues/308). The image [andrewufrank/x11docker-lxde](https://hub.docker.com/r/andrewufrank/x11docker-lxde) adds support for it.
+
+```bash
+docker pull andrewufrank/x11docker-lxde
+
+docker image tag andrewufrank/x11docker-lxde:latest lxde:latest
+```
+
+I am still not able to run `x11docker --desktop lxde` and see the desktop. It shows mostly a black screen with some icons with an error (like missing to find the file). I don't it is related to performance, but at this point I need to do some more digging.
+
 _Perhaps the issue [does it work on arm / RaspBerry Pi?](https://github.com/mviereck/x11docker/issues/100) can provide greater insight._
