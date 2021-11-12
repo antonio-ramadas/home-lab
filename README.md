@@ -16,7 +16,7 @@ What is already working (alphabetical order):
 
 - Bluetooth Player
 - DNS
-- iOS
+- iOS (missing AirPlay)
 - Media Player
 
 ## Backlog
@@ -27,6 +27,7 @@ Already did some investigation, but haven't implemented yet (alphabetical order)
 - Containerization
 - Desktop Gateway
 - Finances
+- iOS (AirPlay)
 - Mail Client
 - Observability
 - Reverse Proxy

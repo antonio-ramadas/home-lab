@@ -1,5 +1,7 @@
 # iOS
 
+## Remote access to Raspberry Pi
+
 It is possible to access the Raspberry Pi from iOS using the [iSH](https://github.com/ish-app/ish) app. The Linux distribution is [Alpine Linux](https://en.wikipedia.org/wiki/Alpine_Linux).
 
 The app provides a [wiki](https://github.com/ish-app/ish/wiki) where [it details how to install `apk`](https://github.com/ish-app/ish/wiki/Installing-apk) if it is not present:
@@ -14,6 +16,16 @@ To be able to interact with the Raspberry Pi, it is necessary to add the OpenSSH
 apk add mandoc man-pages openssh-client
 ```
 
-## Limitations
+### Limitations
 
 - mDNS does not work (i.e., it is not possible to do `ssh pi@raspberry.local`)
+
+## AirPlay Server
+
+:construction: Work In Progress :construction:
+
+We can set the Raspberry Pi to be an AirPlay server. We'll be able to mirror Apple devices.
+
+- [RPiPlay](https://github.com/FD-/RPiPlay)
+  - A [dockerised RPiPlay](https://github.com/rahul-thakoor/balena-rpiplay) approach
+  - Discussion on [Hacker News](https://news.ycombinator.com/item?id=28836382)
