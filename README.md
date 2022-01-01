@@ -18,6 +18,7 @@ What is already working (alphabetical order):
 - DNS
 - iOS (missing AirPlay)
 - Media Player
+- VPN
 
 ## Backlog
 
