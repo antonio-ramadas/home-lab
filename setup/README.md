@@ -36,7 +36,7 @@ ssh-copy-id -i ~/.ssh/<FILENAME>.pub <USERNAME>@<IP>
 ssh -i ~/.ssh/<FILENAME> <USERNAME>@<IP>
 ```
 
-Instead of memorizing the IP, it is possible to use `raspberrypi.local`. This can be changed in `/etc/hostname`.
+Instead of memorizing the IP, it is possible to use `raspberrypi.local` (mDNS). This can be changed in `/etc/hostname`.
 
 We're not going to disable access with password as I want to have the flexibility to access from anywhere. The downsides are that I'll be more prone to attacks, and I'll have to enter a lengthy password.
 
@@ -62,7 +62,7 @@ Uninstaller for FUSE for OS X is coupled with the installation files.
 
 ## Security
 
-Don't rely on defaults. Change them as the ultimate goal is to expose to the internet.
+Don't blindly rely on defaults. Change them as the ultimate goal is to expose to the internet.
 
 ### Firewall
 
